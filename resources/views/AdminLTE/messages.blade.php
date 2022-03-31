@@ -235,9 +235,11 @@
             </ul>
           </li>
         </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>
+
     <!-- /.sidebar -->
   </aside>
 
@@ -358,7 +360,7 @@
             <tbody>
 
               @foreach ($messages as $message )
-                
+
                 <tr>
                   <td>{{$message->name }}</td>
                   <td> {{$message->created_at}} </td>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -16,7 +17,7 @@ class ContactController extends Controller
     {
         $contacts = Contact::orderBy('created_at', 'DESC')->get() ;
 
-        
+
     }
 
     /**
@@ -37,31 +38,39 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $request->validate([
             'categorie' => 'required|max:255',
             'email' => 'required|max:255|min:4|email',
             'website_link' => 'required|max:255|url',
             'more_information' => 'required|max:255',
             'name' => 'required|max:255',
-            //'file' => 'sometimes|max:2048',
+            'file' => 'required|max:2048|mimes:pdf,xls,jpg,png',
             'description' => 'required'
         ], [
             'required' => 'ce champs est requis',
+            'file.max' => 'le fichier doit être au plus de 2Mb',
         ]);
 
-        Contact::create([
-            'categorie' => $request->categorie,
-            'email' =>  $request->email,
-            'website_link' =>  $request->website_link,
-            'more_information' =>  $request->more_information,
-            'name' =>  $request->name,
-            //'file' => 'sometimes|max:2048',
-            'description' => $request->description
-        ]) ;
+        $file = $request->file;
+        $path = 'fichier/contact';
+        $file_name = $file->getClientOriginalName();
+        $file->move($path,$file_name);
 
-        session()->flash('success', 'Merci votre nous vous contacterons d\'ici peu ');
-        return redirect()->back() ;
+        $contact = new Contact();
+
+        $contact->categorie = $request->input('categorie');
+        $contact->email = $request->input('email');
+        $contact->website_link = $request->input('website_link');
+        $contact->more_information = $request->input('more_information');
+        $contact->name = $request->input('name');
+        $contact->file = $file_name;
+        $contact->description = $request->input('description');
+        $contact->created_at = Carbon::now();
+        $contact->save();
+
+        return redirect()->back()->with('success', 'Nous vous contacterons d\'ici peu.');
+
     }
 
     /**

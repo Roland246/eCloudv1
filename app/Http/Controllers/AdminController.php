@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use App\Models\User;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,8 +15,8 @@ class AdminController extends Controller
     {
         $this->middleware('auth');
 
-        
-        
+
+
     }
 
     public function message()
@@ -26,21 +27,21 @@ class AdminController extends Controller
             {
                 $messages = Contact::orderBy('created_at', 'DESC')->get();
 
-                return view('AdminLTE/messages', compact('messages'));
+                return view('AdminLTE.messages', compact('messages'));
             }
         }
-        else 
+        else
         {
             return redirect()->back();
         }
-        
+
     }
 
     public function createAdmin(Request $request)
     {
         $request->validate([
-            'username' => 'required|integer|min:1',
-            'email' => 'required|unique:users'            
+            'username' => 'required|integer|min:4',
+            'email' => 'required|unique:users'
         ]);
 
         User::create([
@@ -51,5 +52,12 @@ class AdminController extends Controller
         ]);
 
         return redirect()->back();
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        return $this->loggedOut($request) ?: redirect('/login');
     }
 }

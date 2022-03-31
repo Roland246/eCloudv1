@@ -35,9 +35,9 @@ class HomeController extends Controller
         {
             $commandes = Commande::orderBy('created_at', 'DESC')
                                     ->where('user_id', Auth::user()->id)
-                                    ->where('statut', false)
-                                    // ->paginate(2) ;
                                     ->get();
+                                    // ->where('statut', false)
+                                    // ->paginate(2)
 
             return view('home', compact('commandes'));
         }

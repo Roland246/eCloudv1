@@ -95,14 +95,14 @@
                                 <li class="list-inline-item"><a href="{{ route('register') }}"><span class="fas fa-lock mr-2"></span> S'enregistrer</a>
                                 @endif
                                 </li>
-                              
+
                                 @endif
                                 <li class="fas fa-shopping-cart"></li>
                             </ul>
                         @endif
-                           
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                                                     </ul>
                                                 </div>
 
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                             <!--home end-->
 
                             <!--pages start-->
-                         
+
                             <!--pages end-->
 
 
@@ -300,7 +300,7 @@
                                             </div>
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
-                                          
+
                                             <!--menu title with subtitle and icon item end-->
                                         </div>
 
@@ -311,10 +311,10 @@
                             <!--hosting end-->
 
                             <!--elements start-->
-                           
+
                             <!--elements end-->
-                            
-                          
+
+
                             <!--support start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="360px" data-position="right">
                                 <a id="supportMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -323,7 +323,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="submit-request.html">
+                                        <a class="title-with-icon-link" href="{{url('help')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat.svg" alt="SVG">
                                                 <div class="media-body">
@@ -338,7 +338,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="support.html">
+                                        <a class="title-with-icon-link" href="#">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/support.svg" alt="SVG">
                                                 <div class="media-body">
@@ -350,14 +350,14 @@
                                     </div>
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                
+
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
-                                    
+
                                     <!--submenu footer end-->
                                 </div>
                                 <!--support submenu end-->
@@ -373,7 +373,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="contact-us.html">
+                                        <a class="title-with-icon-link" href="{{url('faq')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat-mobile.svg" alt="SVG">
                                                 <div class="media-body">
@@ -388,7 +388,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="about-us.html">
+                                        <a class="title-with-icon-link" href="{{url('guide')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/community.svg" alt="SVG">
                                                 <div class="media-body">
@@ -402,19 +402,19 @@
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                   
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->

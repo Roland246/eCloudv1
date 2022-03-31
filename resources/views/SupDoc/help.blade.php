@@ -61,7 +61,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-7 col-lg-6">
                         <div class="page-header-content text-white">
-                            <h1 class="text-white mb-2">Help</h1>
+                            <h1 class="text-white mb-2">Contact</h1>
                             <p class="lead">Enthusiastically embrace resource-leveling functionalities after leveraged paradigms. Distinctively optimize scalable quality vectors with highly efficient.</p>
                         </div>
                     </div>

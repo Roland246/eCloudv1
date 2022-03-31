@@ -22,6 +22,10 @@
     <!--favicon icon-->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -76,14 +80,14 @@
                                 <li class="list-inline-item"><a href="{{ route('register') }}"><span class="fas fa-lock mr-2"></span> S'enregistrer</a>
                                 @endif
                                 </li>
-                              
+
                                 @endif
                                 <li class="fas fa-shopping-cart"></li>
                             </ul>
                         @endif
-                           
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -96,7 +100,7 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
@@ -131,7 +135,7 @@
                                                             <li class="py-1"><span class="ti-control-forward mr-2"></span><strong>45-Jours</strong> de tests gratuits</li>
                                                         </ul>
                                                     </div>
-                                                    <a class="btn primary-solid-btn" href="#    ">Savoir plus <span
+                                                    <a class="btn primary-solid-btn" href="#">Savoir plus <span
                                                             class="fas fa-angle-right ml-2"></span></a>
                                                 </div>
                                             </div>
@@ -143,19 +147,19 @@
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                                     <span class="sub-menu-title">Home Demos</span>
                                                     <ul class="sub-menu-nav-group">
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index.html">Home Default</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-image.html">Home Image</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search.html">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search-2.html">Home Domain Search Two</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Default</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Image</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search Two</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-image.html">Home Background Image</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Image</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-video.html">Home Background Video</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Video</a></li>
 
                                                     </ul>
                                                 </div>
 
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +169,7 @@
                             <!--home end-->
 
                             <!--pages start-->
-                         
+
                             <!--pages end-->
 
 
@@ -179,7 +183,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-server"></i></div>
                                                         <div class="media-body">
@@ -208,7 +212,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="dedicated-server-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-tachometer-alt"></i></div>
                                                         <div class="media-body">
@@ -222,7 +226,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="cloud-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-cloud"></i></div>
                                                         <div class="media-body">
@@ -240,7 +244,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="email-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-envelope"></i></div>
                                                         <div class="media-body">
@@ -254,7 +258,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-database"></i></div>
                                                         <div class="media-body">
@@ -268,7 +272,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fab fa-wordpress"></i></div>
                                                         <div class="media-body">
@@ -281,7 +285,7 @@
                                             </div>
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
-                                          
+
                                             <!--menu title with subtitle and icon item end-->
                                         </div>
 
@@ -292,10 +296,10 @@
                             <!--hosting end-->
 
                             <!--elements start-->
-                           
+
                             <!--elements end-->
-                            
-                          
+
+
                             <!--support start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="360px" data-position="right">
                                 <a id="supportMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -304,7 +308,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="submit-request.html">
+                                        <a class="title-with-icon-link" href="{{url('help')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat.svg" alt="SVG">
                                                 <div class="media-body">
@@ -319,7 +323,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="support.html">
+                                        <a class="title-with-icon-link" href="#">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/support.svg" alt="SVG">
                                                 <div class="media-body">
@@ -331,14 +335,14 @@
                                     </div>
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                
+
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
-                                    
+
                                     <!--submenu footer end-->
                                 </div>
                                 <!--support submenu end-->
@@ -354,7 +358,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="contact-us.html">
+                                        <a class="title-with-icon-link" href="{{url('faq')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat-mobile.svg" alt="SVG">
                                                 <div class="media-body">
@@ -369,7 +373,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="about-us.html">
+                                        <a class="title-with-icon-link" href="{{url('guide')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/community.svg" alt="SVG">
                                                 <div class="media-body">
@@ -383,19 +387,19 @@
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                   
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
@@ -426,7 +430,7 @@
 
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
-                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}" target="_blank">
+                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}">
                                     Mon espace
                                 </a>
                             </li>
@@ -966,34 +970,52 @@
                         </div>
                     </div>
                 </div>
+
+                @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>MERCI !</strong> {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <form class="submit-request-form">
+                        <form action="{{route('contact.store', null, false)}}" method="POST" enctype="multipart/form-data" class="submit-request-form">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label for="select1">Hi, what can we help you with?</label>
-                                        <select id="select1" class="crumina--select input--squared select2-hidden-accessible form-control" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
+                                        <select id="select1" name="categorie" old={{'categorie'}} class="crumina--select input--squared select2-hidden-accessible form-control" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
                                             <option data-display="Domain Registrations">Domain Registrations</option>
                                             <option value="1">Getting Started</option>
                                             <option value="2">Hosting</option>
                                             <option value="3">Domain Registrations</option>
                                             <option value="4">General</option>
                                         </select>
+                                        @error('categorie')
+                                        <span class="text-danger"> {{$errors->first('categorie')}} </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Your Name <span class="required">*</span></label>
-                                        <input id="name" class="form-control" type="text" placeholder="Your Name">
+                                        <input id="name" name="name" old="{{'name'}}"  class="form-control" type="text" placeholder="Your Name">
+                                        @error('name')
+                                            <span class="text-danger"> {{$errors->first('name')}} </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
-                                        <label for="url">Your Website Link</label>
-                                        <input id="url" class="form-control" type="text" placeholder="https://">
+                                        <label for="url">Your Website Link <span class="required">*</span></label>
+                                        <input id="url" name="website_link" old="{{'website_link'}}"  class="form-control" type="text" placeholder="https://">
+                                        @error('website_link')
+                                            <span class="text-danger">{{$errors->first('website_link')}}</span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label for="select2">Tell us more <span class="required">*</span></label>
-                                        <select id="select2" class="form-control" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
+                                        <select id="select2" name="more_information" old="{{'more_information'}}" class="form-control" data-minimum-results-for-search="Infinity" tabindex="-1" aria-hidden="true">
                                             <option data-display="Domain Registrations">What if my domain registration
                                                 expires?
                                             </option>
@@ -1002,29 +1024,40 @@
                                             <option value="3">Domain Registrations</option>
                                             <option value="4">General</option>
                                         </select>
+                                        @error('more_information')
+                                            <span class="text-danger">{{$errors->first('more_information')}}</span>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="submitEmail">Your email <span class="required">*</span></label>
-                                        <input id="submitEmail" class="form-control" type="email" placeholder="Email Address">
+                                        <input id="submitEmail" name="email" old="{{'email'}}"  class="form-control" type="email" placeholder="Email Address">
+                                        @error('email')
+                                        <span class="text-danger"> {{$errors->first('email')}} </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group input-file-wrap">
-                                        <label for="upfile">Attachments</label>
+                                        <label for="upfile">Attachments <span class="required">*</span></label>
                                         <span class="upfile-btn">Upload your file</span>
-                                        <input id="upfile" type="file" class="form-control" />
-
+                                        <input id="upfile"  name="file" old="{{'file'}}"  type="file" class="form-control" />
+                                        @error('file')
+                                        <span class="text-danger"> {{$errors->first('file')}} </span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="descr">Provide a detailed description <span
                                                 class="required">*</span></label>
-                                        <textarea id="descr" class="form-control" placeholder="How can we help you?" rows="4"></textarea>
+                                        <textarea id="descr" name="description" old="{{'description'}}"  class="form-control" placeholder="How can we help you?" rows="4"></textarea>
                                         <p class="small mt-2">Please enter the details of your request. A member of our
                                             support staff will respond as soon as possible.</p>
                                     </div>
+                                    @error('description')
+                                        <span class="text-danger">{{$errors->first('description')}}</span>
+                                    @enderror
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <button type="button" class="btn primary-solid-btn">SUBMIT A REQUEST</button>
+                                    <button type="submit" class="btn primary-solid-btn">SUBMIT A REQUEST</button>
                                 </div>
                             </div>
                         </form>
@@ -1131,7 +1164,7 @@
                                     <h4 class="text-white">SUPPORT</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Contact</a>
+                                            <a class="nav-link" href="{{url('help')}}">Contact</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Knowledge Base</a>
@@ -1210,6 +1243,9 @@
     <script src="assets/js/vendors/magnific-popup.min.js"></script>
     <script src="assets/js/vendors/hs.megamenu.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
     <!--endbuild-->
 </body>
 

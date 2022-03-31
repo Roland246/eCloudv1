@@ -25,26 +25,16 @@ Auth::routes();
 /* ROUTES IBRAHIMA */
 
 Route::get('/faq', function () {
-    return view('faq');
+    return view('SupDoc.faq');
 })->name('faq');
 
 Route::get('/guide', function () {
-    return view('guide');
+    return view('SupDoc.guide');
 })->name('guide');
 
 Route::get('/help', function () {
-    return view('help');
+    return view('SupDoc.help');
 })->name('help');
-
-// Route::get('/admin', function () {
-//     return view('AdminLTE/index');
-// })->name('admin');
-
-// Route::get('/messages', function () {
-//     return view('AdminLTE/messages');
-// })->name('messages');
-
-/* ROUTES IBRAHIMA */
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -53,8 +43,14 @@ Route::resource('contact', ContactController::class);
 Route::get('commandes',  [App\Http\Controllers\CommandeController::class, 'create'])->name('new.commande');
 
 Route::middleware(['auth',])->group(function () {
+    Route::get('/logout', function(){
+        Auth::logout();
+        return redirect()->back('/');
+     });
     Route::post('create/commandes',  [App\Http\Controllers\CommandeController::class, 'store'])->name('create.commande');
     Route::get('messages',  [App\Http\Controllers\AdminController::class, 'message'])->name('messages');
+    Route::put('update-commande/{id}', [App\Http\Controllers\CommandeController::class, 'updateStatus']);
+    Route::get('delete-commande/{id}', [App\Http\Controllers\CommandeController::class, 'destroy']);
 });
 
 

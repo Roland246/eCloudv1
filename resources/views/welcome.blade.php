@@ -21,6 +21,9 @@
 
     <!--favicon icon-->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -76,14 +79,14 @@
                                 <li class="list-inline-item"><a href="{{ route('register') }}"><span class="fas fa-lock mr-2"></span> S'enregistrer</a>
                                 @endif
                                 </li>
-                              
+
                                 @endif
                                 <li class="fas fa-shopping-cart"></li>
                             </ul>
                         @endif
-                           
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -96,7 +99,7 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
@@ -143,19 +146,19 @@
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                                     <span class="sub-menu-title">Home Demos</span>
                                                     <ul class="sub-menu-nav-group">
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index.html">Home Default</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-image.html">Home Image</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search.html">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search-2.html">Home Domain Search Two</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Default</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Image</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search Two</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-image.html">Home Background Image</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Image</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-video.html">Home Background Video</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Video</a></li>
 
                                                     </ul>
                                                 </div>
 
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +168,7 @@
                             <!--home end-->
 
                             <!--pages start-->
-                         
+
                             <!--pages end-->
 
 
@@ -179,7 +182,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-server"></i></div>
                                                         <div class="media-body">
@@ -208,7 +211,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="dedicated-server-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-tachometer-alt"></i></div>
                                                         <div class="media-body">
@@ -222,7 +225,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="cloud-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-cloud"></i></div>
                                                         <div class="media-body">
@@ -240,7 +243,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="email-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-envelope"></i></div>
                                                         <div class="media-body">
@@ -254,7 +257,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-database"></i></div>
                                                         <div class="media-body">
@@ -268,7 +271,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fab fa-wordpress"></i></div>
                                                         <div class="media-body">
@@ -281,7 +284,7 @@
                                             </div>
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
-                                          
+
                                             <!--menu title with subtitle and icon item end-->
                                         </div>
 
@@ -292,10 +295,10 @@
                             <!--hosting end-->
 
                             <!--elements start-->
-                           
+
                             <!--elements end-->
-                            
-                          
+
+
                             <!--support start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="360px" data-position="right">
                                 <a id="supportMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -304,7 +307,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="submit-request.html">
+                                        <a class="title-with-icon-link" href="{{url('help')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat.svg" alt="SVG">
                                                 <div class="media-body">
@@ -319,7 +322,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="support.html">
+                                        <a class="title-with-icon-link" href="#">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/support.svg" alt="SVG">
                                                 <div class="media-body">
@@ -331,14 +334,14 @@
                                     </div>
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                
+
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
-                                    
+
                                     <!--submenu footer end-->
                                 </div>
                                 <!--support submenu end-->
@@ -354,7 +357,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="contact-us.html">
+                                        <a class="title-with-icon-link" href="{{url('faq')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat-mobile.svg" alt="SVG">
                                                 <div class="media-body">
@@ -383,19 +386,19 @@
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                   
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
@@ -426,7 +429,7 @@
 
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
-                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}" target="_blank">
+                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}">
                                     Mon espace
                                 </a>
                             </li>
@@ -866,7 +869,7 @@
             </div>
         </section>
         <!--pricing with switch section end-->
-        
+
 
         <!--feature section start-->
         <section class="hero-equal-height ptb-100 gradient-overly-top" style="background: url('assets/img/offer-bg-3.png')no-repeat center center / cover">
@@ -984,8 +987,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                
+
+
                 </div>
             </div>
         </section>
@@ -1002,11 +1005,11 @@
                 </div>
             </div>
             <div class="feature-content-wrap">
-                
-              
-                  
-                   
-                 
+
+
+
+
+
                         <!--call to action inline start-->
                         <section class="call-to-action ptb-100 gradient-overlay" style="background: url('assets/img/hero-bg-4.jpg')no-repeat center center / cover">
                             <div class="container">
@@ -1030,9 +1033,9 @@
                             </div>
                         </section>
                         <!--call to action inline end-->
-                   
-                    
-            
+
+
+
             </div>
         </section>
 
@@ -1045,15 +1048,20 @@
                             <h2>Submit Your Request</h2>
                             <p class="lead">Synergistically impact innovative imperatives after magnetic bandwidth.
                                 Collaboratively generate sustainable customer service without.</p>
-                                @if ($message = Session::get('success'))
-                                    {{$message}} 
-                                @endif
                         </div>
                     </div>
                 </div>
+
+                @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>MERCI !</strong> {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <form action="{{route('contact.store', null, false)}}" method="POST"  class="submit-request-form">
+                        <form action="{{route('contact.store', null, false)}}" method="POST" enctype="multipart/form-data" class="submit-request-form">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -1067,21 +1075,21 @@
                                             <option value="4">General</option>
                                         </select>
                                         @error('categorie')
-                                            {{$errors->first('categorie')}}
+                                        <span class="text-danger"> {{$errors->first('categorie')}} </span>
                                         @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Your Name <span class="required">*</span></label>
                                         <input id="name" name="name" old="{{'name'}}"  class="form-control" type="text" placeholder="Your Name">
                                         @error('name')
-                                            {{$errors->first('name')}}
+                                            <span class="text-danger"> {{$errors->first('name')}} </span>
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <label for="url">Your Website Link</label>
+                                        <label for="url">Your Website Link <span class="required">*</span></label>
                                         <input id="url" name="website_link" old="{{'website_link'}}"  class="form-control" type="text" placeholder="https://">
                                         @error('website_link')
-                                            {{$errors->first('website_link')}}
+                                            <span class="text-danger">{{$errors->first('website_link')}}</span>
                                         @enderror
                                     </div>
                                 </div>
@@ -1098,22 +1106,22 @@
                                             <option value="4">General</option>
                                         </select>
                                         @error('more_information')
-                                            {{$errors->first('more_information')}}
+                                            <span class="text-danger">{{$errors->first('more_information')}}</span>
                                         @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="submitEmail">Your email <span class="required">*</span></label>
                                         <input id="submitEmail" name="email" old="{{'email'}}"  class="form-control" type="email" placeholder="Email Address">
                                         @error('email')
-                                            {{$errors->first('email')}}
+                                        <span class="text-danger"> {{$errors->first('email')}} </span>
                                         @enderror
                                     </div>
                                     <div class="form-group input-file-wrap">
-                                        <label for="upfile">Attachments</label>
+                                        <label for="upfile">Attachments <span class="required">*</span></label>
                                         <span class="upfile-btn">Upload your file</span>
                                         <input id="upfile"  name="file" old="{{'file'}}"  type="file" class="form-control" />
                                         @error('file')
-                                            {{$errors->first('file')}}
+                                        <span class="text-danger"> {{$errors->first('file')}} </span>
                                         @enderror
                                     </div>
                                 </div>
@@ -1126,7 +1134,7 @@
                                             support staff will respond as soon as possible.</p>
                                     </div>
                                     @error('description')
-                                        {{$errors->first('description')}}
+                                        <span class="text-danger">{{$errors->first('description')}}</span>
                                     @enderror
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -1142,13 +1150,13 @@
         <!--call to action section end-->
 
         <!--faq section start-->
-       
+
 
 
         <!--faq section end-->
 
         <!--testimonial and review section start-->
-    
+
         <!--testimonial and review section end-->
 
 
@@ -1249,7 +1257,7 @@
                                     <h4 class="text-white">SUPPORT</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Contact</a>
+                                            <a class="nav-link" href="{{ url('faq') }}">Contact</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Knowledge Base</a>
@@ -1328,6 +1336,9 @@
     <script src="assets/js/vendors/magnific-popup.min.js"></script>
     <script src="assets/js/vendors/hs.megamenu.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
     <!--endbuild-->
 </body>
 

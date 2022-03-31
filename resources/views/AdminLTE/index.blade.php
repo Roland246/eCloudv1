@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
@@ -205,35 +206,10 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Tables
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+          <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button class="btn btn-outline-warning" type="submit">Déconnexion</button>
+          </form>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -376,8 +352,16 @@
                   @if ($commande->statut)
                     <span class="badge badge-success">Effectuée</span>
                   @else
+                  <form action="{{ url('update-commande/'.$commande->id) }}" method="post">
+                    @csrf
+                    @method('PUT')
+                    <div class="form-group mb-3">
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </div>
+                  </form>
                     <span class="badge badge-danger">En attente</span>
                   @endif
+                  <a href="{{ url('delete-commande/'.$commande->id) }}" class="btn btn-danger btn-sm">Supprimer</a>
                 </td>
               </tr>
             @endforeach
@@ -430,7 +414,7 @@
               <div class="card-body">
                 <div id="world-map" style="height: 250px; width: 100%;"></div>
               </div>
-              
+
             </div>
             <!-- /.card -->
 

@@ -77,14 +77,14 @@
                                 <li class="list-inline-item"><a href="{{ route('register') }}"><span class="fas fa-lock mr-2"></span> S'enregistrer</a>
                                 @endif
                                 </li>
-                              
+
                                 @endif
                                 <li class="fas fa-shopping-cart"></li>
                             </ul>
                         @endif
-                           
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
@@ -156,7 +156,7 @@
                                                     </ul>
                                                 </div>
 
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
                             <!--home end-->
 
                             <!--pages start-->
-                         
+
                             <!--pages end-->
 
 
@@ -282,7 +282,7 @@
                                             </div>
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
-                                          
+
                                             <!--menu title with subtitle and icon item end-->
                                         </div>
 
@@ -293,10 +293,10 @@
                             <!--hosting end-->
 
                             <!--elements start-->
-                           
+
                             <!--elements end-->
-                            
-                          
+
+
                             <!--support start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="360px" data-position="right">
                                 <a id="supportMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -332,14 +332,14 @@
                                     </div>
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                
+
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
-                                    
+
                                     <!--submenu footer end-->
                                 </div>
                                 <!--support submenu end-->
@@ -384,19 +384,19 @@
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                   
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
@@ -427,7 +427,7 @@
 
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
-                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}" target="_blank">
+                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}">
                                     Mon espace
                                 </a>
                             </li>
@@ -548,7 +548,7 @@
                                 <button type="submit" class="btn btn-primary" >
                                 <a href="{{ route('login') }}">
                                     {{ __('Connexion') }}
-                                   
+
                                 </button>
                             </div>
                         </div>

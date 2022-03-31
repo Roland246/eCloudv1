@@ -24,7 +24,7 @@ class CommandeController extends Controller
             $commandes = Commande::where('user_id', Auth::user()->id)
                         ->orderBy('created_at', 'DESC')->get();
         }
-        
+
     }
 
     /**
@@ -45,7 +45,7 @@ class CommandeController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         // dd($request);
         $request->validate([
             'core' => 'required|integer|min:1',
@@ -53,7 +53,7 @@ class CommandeController extends Controller
             'storage' => 'required|integer|min:1',
             'bandwidth' => 'required|integer|min:1',
             'price' => 'required|integer|min:1',
-            
+
         ], [
             'required' => 'ce champs est requis',
             'integer' => 'ce champs doit être un entier'
@@ -70,10 +70,10 @@ class CommandeController extends Controller
 
         session()->flash('success', 'Merci votre commande à belle et bien été enregistrée ');
         return redirect()->back() ;
-    
+
     }
 
-  
+
     public function show(Commande $commande)
     {
         //
@@ -103,7 +103,7 @@ class CommandeController extends Controller
      * @param  \App\Models\Commande  $commande
      * @return \Illuminate\Http\Response
      */
-    public function destroy(int $id)
+    public function destroy($id)
     {
         $commande = Commande::findOrFail($id);
 

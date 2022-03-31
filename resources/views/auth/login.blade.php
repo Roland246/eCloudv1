@@ -77,14 +77,14 @@
                                 <li class="list-inline-item"><a href="{{ route('register') }}"><span class="fas fa-lock mr-2"></span> S'enregistrer</a>
                                 @endif
                                 </li>
-                              
+
                                 @endif
                                 <li class="fas fa-shopping-cart"></li>
                             </ul>
                         @endif
-                           
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
 
                     <!--logo start-->
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="assets/img/logo-color.png" width="120" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
 
                     <!--responsive toggle button start-->
@@ -144,19 +144,19 @@
                                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                                     <span class="sub-menu-title">Home Demos</span>
                                                     <ul class="sub-menu-nav-group">
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index.html">Home Default</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-image.html">Home Image</a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search.html">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-domain-search-2.html">Home Domain Search Two</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Default</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Image</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search <span class="badge badge-danger ml-2">Hot</span></a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Domain Search Two</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-image.html">Home Background Image</a>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Image</a>
                                                         </li>
-                                                        <li><a class="nav-link sub-menu-nav-link" href="index-bg-video.html">Home Background Video</a></li>
+                                                        <li><a class="nav-link sub-menu-nav-link" href="#">Home Background Video</a></li>
 
                                                     </ul>
                                                 </div>
 
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
                             <!--home end-->
 
                             <!--pages start-->
-                         
+
                             <!--pages end-->
 
 
@@ -180,7 +180,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-server"></i></div>
                                                         <div class="media-body">
@@ -209,7 +209,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="dedicated-server-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-tachometer-alt"></i></div>
                                                         <div class="media-body">
@@ -223,7 +223,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="cloud-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-cloud"></i></div>
                                                         <div class="media-body">
@@ -241,7 +241,7 @@
                                         <div class="col-md-6">
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="email-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-envelope"></i></div>
                                                         <div class="media-body">
@@ -255,7 +255,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="shared-wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fas fa-database"></i></div>
                                                         <div class="media-body">
@@ -269,7 +269,7 @@
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
                                             <div class="title-with-icon-item">
-                                                <a class="title-with-icon-link" href="wp-hosting.html">
+                                                <a class="title-with-icon-link" href="#">
                                                     <div class="media">
                                                         <div class="menu-item-icon"><i class="fab fa-wordpress"></i></div>
                                                         <div class="media-body">
@@ -282,7 +282,7 @@
                                             </div>
                                             <!--menu title with subtitle and icon item end-->
                                             <!--menu title with subtitle and icon item start-->
-                                          
+
                                             <!--menu title with subtitle and icon item end-->
                                         </div>
 
@@ -293,10 +293,10 @@
                             <!--hosting end-->
 
                             <!--elements start-->
-                           
+
                             <!--elements end-->
-                            
-                          
+
+
                             <!--support start-->
                             <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="360px" data-position="right">
                                 <a id="supportMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Support</a>
@@ -305,7 +305,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="submit-request.html">
+                                        <a class="title-with-icon-link" href="{{url('help')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat.svg" alt="SVG">
                                                 <div class="media-body">
@@ -320,7 +320,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="support.html">
+                                        <a class="title-with-icon-link" href="#">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/support.svg" alt="SVG">
                                                 <div class="media-body">
@@ -332,14 +332,14 @@
                                     </div>
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                
+
                                     <!--menu title with subtitle and icon item end-->
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
-                                    
+
                                     <!--submenu footer end-->
                                 </div>
                                 <!--support submenu end-->
@@ -355,7 +355,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="contact-us.html">
+                                        <a class="title-with-icon-link" href="{{url('faq')}}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/chat-mobile.svg" alt="SVG">
                                                 <div class="media-body">
@@ -370,7 +370,7 @@
 
                                     <!--menu title with subtitle and icon item start-->
                                     <div class="title-with-icon-item">
-                                        <a class="title-with-icon-link" href="about-us.html">
+                                        <a class="title-with-icon-link" href="{url('guide')}">
                                             <div class="media align-items-center">
                                                 <img class="menu-titile-icon" src="assets/img/community.svg" alt="SVG">
                                                 <div class="media-body">
@@ -384,19 +384,19 @@
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                  
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                   
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--menu title with subtitle and icon item start-->
-                                 
+
                                     <!--menu title with subtitle and icon item end-->
 
                                     <!--submenu footer start-->
@@ -427,7 +427,7 @@
 
                             <!--button start-->
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
-                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}" target="_blank">
+                                <a class="btn primary-solid-btn animated-btn" href="{{ url('/home') }}">
                                     Mon espace
                                 </a>
                             </li>
@@ -500,7 +500,7 @@
                                         </div>
                                     </div>
 
-                                   
+
 
                                     <!-- Submit -->
                                     <button class="btn btn-block primary-solid-btn border-radius mt-4 mb-3" type="submit">
